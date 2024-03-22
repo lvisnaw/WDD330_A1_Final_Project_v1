@@ -1,0 +1,37 @@
+{
+ "business": [
+     {
+      "name": "Allens Camera",
+      "photo": "allens.jpg",
+      "url": "https://allenscamera.net/",
+      "yearFounded": 1858,
+      "currentPopulation": 2985,
+    	"events": [
+      "Beginner DSLR","<br>",
+      "July 18, 2021 4-6 P.M."
+      ]
+    },
+ {
+      "name": "Moxtek",
+      "photo": "moxtek.jpg",
+      "url": "https://moxtek.com/",
+      "yearFounded": 1826,
+      "currentPopulation": 17852,
+      "averageRainfall": 17,
+      	"events": [
+      "SPIE Optics+Photonics 2021",
+      "August 3-5 in San Diego"
+      ]
+    },
+{
+      "name": "Sun River Gardens",
+      "photo": "sunriver.jpg",
+      "url": "https://sunrivergardens.com/",
+      "yearFounded": 1864,
+    	"events": [
+      "Succulent Plant Workshop",
+      "April 10, 9 - 11 A.M."
+    ]
+  }
+]
+}

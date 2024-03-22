@@ -1,0 +1,46 @@
+header div.tablePage {
+    margin: 20px auto;
+    text-align: center;
+}
+main table {
+    margin: 50px auto;
+    width: 50%;
+}
+main div table tr.title {
+    font-weight: 600;
+    font-size: 1.6em;
+    line-height: 3rem;
+    padding: 2rem 2%;
+}
+main div table tr.head td {
+    color: var(--accent4-color);
+}
+table {box-shadow: 5px 5px 15px var(--primary-color);}
+table, th, td {
+    border: 1px solid var(--accent1-color);
+    border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: center;    
+}
+#tbl01 th {
+    background-color: var(--primary-color);
+    color: var(--accent4-color);
+}
+#tbl01 tr:nth-child(even) {
+    background-color: var(--accent2-color);
+}
+#tbl01 tr:nth-child(odd) {
+    background-color: var(--accent3-color);
+}
+#tbl01 tr:nth-child(6) :last-child {
+    background-color: var(--primary-color);
+    color: var(--accent4-color);
+}
+#tbl01 tr:nth-child(2) {
+    background-color: var(--accent5-color);
+}
+#tbl01 tr:nth-child(7) :first-child {
+    font-style: italic;
+}

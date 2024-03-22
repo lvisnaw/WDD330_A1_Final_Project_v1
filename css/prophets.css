@@ -1,0 +1,95 @@
+/* Collor Pallet https://coolors.co/012a4a-013a63-01497c-014f86-2a6f97-2c7da0-468faf-61a5c2-89c2d9-a9d6e5 */
+:root {
+--primary-color: #2C7DA0;
+--secondary-color: #61A5C2;
+--accent1-color: #012A4A;
+--accent2-color: #A9D6E5;
+--accent3-color: #89C2D9;
+--accent4-color: #ffffff;
+--accent5-color: #01497C;
+
+/* change the values below to your chosen font(s) */
+--heading-font: 'Libre Baskerville', serif;
+--paragraph-font: 'Open Sans', sans-serif;    
+    
+}
+
+body {
+    text-align: center;
+    color: var(--accent1-color);
+    background-color: var(--primary-color);
+}
+header {
+    padding: .5rem 2%;
+    background-color: var(--accent1-color);
+    box-shadow: 0px 3px 10px 0px var(--accent5-color);
+}
+header h1 {
+    text-align: center;
+    font: var(--heading-font);
+    color: var(--accent4-color);
+    font-size: 4rem;
+    line-height: 4.5rem;
+}
+main {
+    padding: .5rem 10%;    
+}
+main div h2 {
+    margin: auto;
+    font: var(--heading-font);
+    padding: 10px 0 15px 0;
+}
+main div p {
+    margin: auto;
+    font: var(--heading-font);
+    line-height: 20px;
+}
+main div.cards {
+    padding: 0 2%;
+    margin: auto;
+}
+main section {
+    border: 1px solid #999;
+    background-color: var(--accent2-color);
+    border-radius: 4px;
+    margin: .5rem;
+    padding: 10px 5px 20px 5px;
+    box-shadow: 0 5px 8px;
+}
+main div section h2 {
+    font-size: 1.3rem;
+    text-align: center;
+}
+main div section p {
+    font-size: .8rem;
+    text-align: center;
+}
+main div section:hover {
+    box-shadow: 0 0 50px #333;
+}
+section img {
+    max-width: 90%;
+    box-shadow: 0 10px 25px 0 var(--accent1-color);
+    border-radius: 4px;
+    object-fit: scale-down;
+}
+footer, footer a, footer p {
+    background-color: var(--accent1-color);
+    color: var(--accent4-color);
+    padding: 1rem 2%;
+    text-align: center;
+}
+@media screen and (min-width: 35em) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    section img {
+        max-width: 200px;
+    }
+}
+@media screen and (min-width: 65rem) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

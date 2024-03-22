@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="WDD230-07 Portal Assignment Lesson 4 Page - Web Frontend Development at Brigham Young University - Idaho">
+<meta name="author" content="Leon Visnaw">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>Soda Springs</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans&display=swap" rel="stylesheet">-->
+<link rel="shortcut icon" href="/favicon.ico">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+
+     
+</head>
+<body>
+<!-- Message Center -->
+    <section class="msgCenter" id="message">
+        <h4>Saturday, June 12</h4>
+        <p>Fireworks! 10:00 P.M. at the City Center Park.</p>
+        <p>Come early, there will be a parade, good food, and carnival rides. See you there.</p>
+    </section>
+<!-- HEADER HERE -->
+    <header class="clearfix">
+        <section class="center">
+            <img src="images/Orem_Final_v2.png" alt="Orem Utah Logo" />
+        </section>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <div class="center">
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="local.html">Local Businesses</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                <!-- <li><a href="fishhaven.html">Title 3</a></li> -->
+                <li><a href="form.html">Membership</a></li>
+                <!-- <li><a href="gallery.html">Images</a></li> -->
+            </ul>
+        </div>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main class="center">
+        <h2>Preston Idaho</h2>
+        <div class="mainHero clearfix">
+            <picture class="mainImg">
+                <source media="(max-width: 400px)" srcset="images/sodasprings-400x400.jpg">
+                <source media="(max-width: 600px)" srcset="images/sodasprings-600x400.jpg">
+                <source media="(max-width: 1200px)" srcset="images/sodasprings-1000x500.jpg">
+                <img src="images/sodasprings-1000x500.jpg" id="heroImg" alt="Preston Idaho Hero" />
+            </picture>                
+            <section class="placeHolder clearfix">
+                <h3>Weather Summary</h3>
+                <hr>
+                <table class="smCenter">
+                    <tbody>
+                        <tr>
+                            <td>Currently:</td>
+                            <td><span id="currentWeather"></span></td>
+                        </tr>
+                        <tr>
+                            <td>High:</td>
+                            <td><span id="currentTemp"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Wind Speed:</td>
+                            <td><span id="windSpeed"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Wind Chill:</td>
+                            <td><span id="windChill"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Humidity:</td>
+                            <td><span id="humidity"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <!-- Events: BEGIN
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <p>April 15, 2021: Join us for our annual tax spout off.</p>
+            <p>May 4, 2021: May the 4th be with you on this day where we light it up.</p>
+            <p>July 4, 2021: Really is there any better fireworks than natural ones? See you there.</p>
+        </section>
+        Events: END -->
+        <!-- Events: BEGIN -->
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <div id="soda"></div>
+            </section>
+        <!-- Events: END -->        
+        <!-- 5-Day Forcast Cards: BEGIN -->
+        <h3 id="fDayHeader">5-Day Forecast</h3>
+        <div class="fiveDayForcastNew" id="fCard"></div>
+        <!-- 5-Day Forcast Cards: END -->
+        <article>
+            <img src="images/ss-geyser.jpg" id="articleImage" alt="Weather Summary Hero" width="300" height="300" />
+            <h3>Oregon Trail Oasis for Historic Tours and Outdoor Adventure!</h3>
+            <p>Soda Springs boasts having the world’s only captive geyser. On November 30, 1937 in an attempt to find a hot water source for a local swimming pool, a well driller set free the natural geyser at a depth of 317 feet. It is located on Pyramid Spring, a travertine mound described by Fremont in his 1840s expeditions, along with other area springs. The history of Soda Springs and Caribou County is portrayed on picture boards in the Geyser Park Visitor Center. Historical artifacts and antiques are on display next door at the Enders Hotel Museum. Enter on Main Street & 1st Street South and drive 150 feet west to Geyser Park.&nbsp;</p>
+        </article>
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer class="center">
+        <div id="ftMapContact">
+            <div id="ftMap">
+                <iframe id="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.726282657175!2d-111.91534447268731!3d42.099805311875485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1612654498348!5m2!1sen!2sus"></iframe>
+            </div>
+            <div id="ftContact">
+                <h4>Contact Information</h4>
+                <p><i class="material-icons s15">place</i>&nbsp;56 N. State Street, Orem, UT 84057<br>
+                <i class="material-icons s15">&#xe554;</i>&nbsp;info@orem.gov<br>
+                <i class="material-icons s15">&#xe551;</i>&nbsp;1-801-229-7000</p>
+                <a href="https://www.facebook.com/oremcity" target="_blank"><img src="images/facebook.png" alt="Facebook" class="social" /></a>
+                <a href="https://twitter.com/Orem_City" target="_blank"><img src="images/twitter.png" alt="Twitter" class="social" /></a>
+                <a href="https://www.instagram.com/orem_city" target="_blank"><img src="images/instagram.png" alt="Instagram" class="social" /></a>
+            </div>
+        </div>
+        <div id="classData">
+            <p>&copy; <span id="currentYear"></span> | Leon Visnaw | Utah | <a href="https://www.byui.edu/online" class="linkColor" target="_blank">BYUI Online Learning</a><br>
+            Last Updated: <span id="currentDate"></span></p>
+        </div>
+    </footer>
+    <p>&nbsp;</p>
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/lazy-load.js"></script>
+    <script src="js/orem.js"></script>
+</body>
+</html>
