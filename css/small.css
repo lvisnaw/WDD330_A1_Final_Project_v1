@@ -25,11 +25,16 @@ header div {margin: 0; font-weight: normal; font-size: 1rem;}
 /*----------- NAVIGATION --------------*/
 nav button {margin: .2rem 2%; background-color: var(--secondary-color); color: var(--accent3-color); border: none; font-size: 1.6rem;}
 nav {background-color: var(--primary-color);}
-nav ul {list-style-type: none; padding: 0; margin: 0;}
+nav ul {list-style-type: none; padding: .2rem 2%; margin: 2px;}
 nav ul li a {display: inline-block; color: var(--secondary-color); padding: .5rem; text-decoration: none; font-size: .9rem; text-align: center;}
 nav ul li a:hover {background-color: var(--accent2-color); color: var(--accent1-color);}
 nav ul li.active a {background-color: var(--accent1-color); color: var(--secondary-color);}
 nav ul.hide {display: none;}
+/* Right justify the last li element */
+#primaryNav li:last-child {float: right;}
+/* Change the image size */
+#primaryNav li:last-child img {width: 40px; height: auto;}
+
 /*----------- MAIN --------------*/
 main {padding: 0 2%; min-height: 10rem;}
 main img {width: 100%; height: auto; border-radius: 4px;}
