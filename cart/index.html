@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="WDD230-07 Final Page Prject - Web Frontend Development at Brigham Young University - Idaho">
+<meta name="author" content="Leon Visnaw">
+<!-- This was built by Leon Visnaw  -->
+<title>SLV Designs</title>
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+<script src="js/main.js" type="module"></script>
+</head>
+<body>
+<!-- Message Center
+    <section class="msgCenter" id="message">
+        <h4>Saturday, June 12</h4>
+        <p>Fireworks! 10:00 P.M. at the City Center Park.</p>
+        <p>Come early, there will be a parade, good food, and carnival rides. See you there.</p>
+    </section>  -->
+<!-- HEADER HERE -->
+<header class="divider" id="main-header"></header>
+	<header class="clearfix">
+        <section class="center">
+            <img src="images/slvJewelry.png" alt="SLV Jewlery Logo" />
+        </section>
+    </header> 
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <div class="center">
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="local.html">Product</a></li>
+                <li><a href="form.html">Partner</a></li>
+                <li><a href="cart/index.html"><img src="images/bag.png"></a></li>
+            </ul>
+        </div>
+    </nav>    
+<!-- CONTENT HERE -->
+    <main class="center">
+        <h2>Orem, Utah</h2>
+        <div class="mainHero clearfix">
+            <picture class="mainImg">
+                <source media="(max-width: 400px)" srcset="images/slvJewelry-400x400">
+                <source media="(max-width: 600px)" srcset="images/slvJewelry-600x400.jpg">
+                <source media="(max-width: 1200px)" srcset="images/slvJewelry-1000x500.jpg">
+                <img src="images/slvJewelry-1000x500.jpg" id="heroImg" alt="SLV Jewlery Hero" />
+            </picture>                
+            <section class="placeHolder clearfix">
+                <h3>Weather Summary</h3>
+                <hr>
+                <table class="smCenter">
+                    <tbody>
+                        <tr>
+                            <td>Currently:</td>
+                            <td><span id="currentWeather"></span></td>
+                        </tr>
+                        <tr>
+                            <td>High:</td>
+                            <td><span id="currentTemp"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Wind Speed:</td>
+                            <td><span id="windSpeed"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Wind Chill:</td>
+                            <td><span id="windChill"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Humidity:</td>
+                            <td><span id="humidity"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <!-- Cards Section: BEGIN -->
+        <div class="businesses"></div>
+        <!-- Cards Section: END -->
+        <article>
+            <img src="images/orem-drycreek-view.jpg" id="articleImage" alt="Orem Dry Creek View" width="300" height="300" />
+            <h3>A Little History</h3>
+            <p>The city of Orem is located on the eastern shore of Utah Lake and extends on the east to Provo and the foothills of Mount Timpanogos. It shares the general location with Provo, and its history is closely related to that of Provo. Its recent explosive development and growth have resulted in Orem's population exceeding 67,000 people, according to 1990 census figures.&nbsp;</p>
+            <p>Prior to its incorporation, Orem was known as the "Provo bench," and its fertile orchards and farmlands added to Provo's early reputation as the "Garden City of Utah." Orem was incorporated in 1919 because residents recognized the need to develop a water system for the area.&nbsp;</p>
+            <p>Unlike many Utah towns and cities, Orem was not laid out in regular city blocks with houses clustered closely together. Instead, Orem's origins are in homesteads settled along the territorial highway (now State Street) and along other substantial arteries where area farmers built their homes and to live near their fields and orchards.&nbsp;</p>
+            <p>By Kenneth L. Cannon II. Read the full <a href="https://www.uen.org/utah_history_encyclopedia/o/OREM.shtml#:~:text=Prior%20to%20its%20incorporation%2C%20Orem,water%20system%20for%20the%20area." target="_blank">article</a>.</p>
+        </article>
+        
+    </main>
+</body>
+</html>
