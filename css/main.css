@@ -1,0 +1,221 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 65rem) {
+    header, nav, main, footer {margin: auto;}
+    /*----------- BODY --------------*/
+    /*----------- HEADER --------------*/
+    /*----------- NAVIGATION --------------*/
+    nav button {display: none;}    
+    nav ul.hide {display: block;}
+    /*----------- MAIN --------------*/
+    .contentbox {display: block; margin: 10px auto; border: 1px dashed var(--secondary-color); padding: 15px; background-color: rgba(169, 214, 229, 1);}
+    main {padding: .2rem 2%; max-width: 64rem;}
+    main figure {margin: 0 auto;}
+    main div figure.wImg {display: inline-block; width: 30%; height: auto; margin: 0 auto;}
+    main div.wHeading {text-align: left; margin: 0 .5rem;}
+    .fiveDayImgPlaceHolder {background-color: rgba(169, 214, 229, 0.6); padding: 1rem 1rem 1rem 1rem;}    
+    /*------ Home Page Cards ---------*/
+    main div.businesses {display: grid; grid-template-columns: 1fr 1fr 1fr; grid-column-gap: 5px; padding: 20px;}
+    main div.businesses a {display: block;}
+    main div.businesses section {display: grid; grid-template-columns: 1fr; font-family: var(--heading-font); text-align: center; max-width: 45rem; border-radius: 4px; margin: .5rem auto; padding: 0 0 20px 0; box-shadow: 0 5px 8px;}
+    main section div.title {grid-column: 1/2; grid-row: 1/2; padding-top: 0;}
+    main div.businesses h2 {font-size: 1.8rem; margin: auto; background-color: var(--accent1-color); padding: 10px 0 5px 0; border-radius: 4px 4px 0 0;}
+    main div.businesses h3 {margin: auto; background-color: var(--accent1-color); font-size: .7rem; padding: 0 0 15px 0;}
+    main div.businesses p {font-size: .8rem; margin: auto; line-height: 20px;}
+    main div.businesses section a div.info {display: block;}
+    main div.businesses img.imgCard {width: 90%;}
+    /*----------- fDay --------------*/
+    main section.fDay {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; justify-content: center; background-color: rgba(169, 214, 229, 0.6); margin: 2%;}
+    main div#fCard {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; margin: 2% auto; justify-content: center; background-color: rgba(169, 214, 229, 0.6);}
+    #fCard h4 {display: block; padding: 1rem; text-align: center; margin: 0; background-color: var(--secondary-color);}
+    main section.fDay img {text-align: center; margin: auto; width: 40%; height: auto;}
+    main section.fDay p {display: block; text-align: center; margin: auto; color: var(--accent1-color); padding-bottom: 10px;}
+    main div.fiveDayForcastNew section {width: 150px; margin: auto; border: 1px solid var(--accent1-color);}    
+    /*----------- FORM --------------*/
+    form fieldset {width: 90%;}
+    form label.sbs {padding: .4rem 0;}
+    form label.top input, form select, form label.top textarea, form label select option, div#selected {max-width: 30rem;}    
+    /*----------- FOOTER --------------*/    
+    } /* end of media query */
+
+    /*----------- Medium CSS ----------*/
+    /* 40em is also 640px (if basefont is 16px) */
+@media only screen and (min-width: 40rem) {
+    /*----------- BODY --------------*/
+    /*----------- HEADER --------------*/
+    header section {padding: .2rem 2%; max-width: 64rem;}
+    /* header img {width: auto;} */
+    header h1 {font-size: 2rem;}
+    header h2 {font-size: 1.5rem;}
+    /*----------- NAVIGATION --------------*/
+    nav div {align-content: center; max-width: 64rem;}
+    nav ul {display: flex; justify-content: space-around; margin-left: 2%;}
+    nav ul li {float: left;}
+    nav ul li a{padding: .5rem 1rem;}
+    nav button {display: none;}    
+    nav ul.hide {display: block;}
+    /*----------- MAIN --------------*/
+    .contentbox .center {display: block; margin: 10px auto; border: 1px dashed var(--secondary-color); padding: 15px; background-color: rgba(169, 214, 229, 0.6);}
+    main {padding: .2rem 2%; max-width: 60rem;}
+    main img {width: 100%; height: auto;}
+    main div.mainHero {max-width: 75rem;}
+    main div figure.wImg {display: inline-block; width: 41%; height: auto; padding: .1rem 1%; margin: 1rem 2%;}
+    main div figcaption {font-size: 10px; padding: 0 0 20px 0;}
+    main div.wHeading {text-align: left; margin: 0 3rem;}
+    .mainHero {position: relative;}
+    .placeHolder {border: 2px solid var(--secondary-color); text-align: center; width: 310px; height: 240px; padding: 10px; position: absolute; top: 3rem; left: 3rem; background-color: rgba(169, 214, 229, 0.9);}
+    .placeHolder td{text-align: right; padding: .4rem .2rem;}
+    main section.placeHolder h3 {margin: 0; padding: 5px 0 5px 0;}
+    .smCenter {margin: auto; width: 100%; text-align: left;}
+    .fiveDayForcast {display: block;}   
+    section.fiveDayImgPlaceHolder {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; justify-content: center; background-color: rgba(169, 214, 229, 0.6); padding: 1rem 1rem 1rem 1rem;}
+    section.fiveDayImgPlaceHolder div {text-align: center; border: 1px solid var(--accent1-color);}
+    section.fiveDayImgPlaceHolder div h4 {background-color: var(--secondary-color); margin: 0; padding: 1rem;}
+    main div .visible img {display: inline-flex; justify-content: space-around; align-content: center;}   
+    .fiveDayImg {width: 50%; height: auto;}
+    article {border: 1px solid var(--secondary-color); margin: 1rem 0; padding: 0 1%;}
+    article img {width: 25%; height: auto; float: right; margin: 0 2% 2% 2%;}
+    article h3, p {padding: 0 5px; margin: 2%;}
+    article h3 {font-size: 1.5rem;}
+    article p {font-size: .8rem; line-height: 16px;}
+    /*----------- fDay --------------*/
+    main div#fCard {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; padding: 1rem; max-width: 100%; margin: 2% auto 5%; justify-content: center; background-color: rgba(169, 214, 229, 0.6);}
+    #fCard h4, p {font-size: 1.2vw;}
+    #fCard h4 {display: block; padding: 1rem; text-align: center; margin: 0; background-color: var(--secondary-color);}
+    main section.fDay img {text-align: center; margin: auto; width: 40%; height: auto;}
+    main section.fDay p {display: block; text-align: center; margin: auto; color: var(--accent1-color); padding-bottom: 10px;}
+    main div.fiveDayForcastNew section {width: 90%; border: 1px solid var(--accent1-color);}
+    /*----------- Form --------------*/    
+    form fieldset {width: 60%;}
+    form label.top input, form select, form label.top textarea, form label select option, div#selected {max-width: 25rem;}
+    /*------ Home Page Cards ---------*/
+    main div.businesses section {font-family: var(--heading-font); text-align: center; max-width: 600px; background-color: var(--accent1-color); border-radius: 4px; margin: .5rem auto; padding: 0; box-shadow: 0 5px 8px;}
+    main div.businesses a {display: grid; grid-template-columns: 1fr 1fr;}
+    main section div.title {grid-column: 1/2; grid-row: 1/2; padding-top: 2rem;}
+    main section div.info {grid-column: 1/2; grid-row: 2/3;}
+    main section:nth-child(odd) div.title {grid-column: 2/3; grid-row: 1/2;}
+    main section:nth-child(odd) div.info {grid-column: 2/3; grid-row: 2/3;}
+    main div.businesses h2 {font-size: 2.3rem; margin: auto; background-color: var(--accent1-color); padding: 10px 0 5px 0; border-radius: 4px 4px 0 0;}
+    main div.businesses h3 {margin: auto; background-color: var(--accent1-color); font-size: 1.2rem; padding: 0 5px 15px 5px;}
+    main div.businesses p {margin: auto; line-height: 20px;}
+    main div.businesses section img {grid-column: 2/3; grid-row: 1/3; width: 100%; height: auto; box-shadow: 0 0px 0px;}
+    main div.businesses section:nth-child(odd) img {grid-column: 1/2; grid-row: 1/3;}
+    main div.businesses img.imgCard {width: 100%; border-radius: 4px; box-shadow: 0 5px 8px var(--accent1-color);}
+    /*----------- Events --------------*/
+    main section.events {border: 1px solid var(--accent1-color); margin: 20px auto; max-width: 60%; background-color: var(--accent2-color); border-radius: 4px; box-shadow: 0 5px 8px var(--accent1-color);}
+    main section.events h2 {text-align: center; background-color: var(--primary-color); padding: 25px; margin: 0;}
+    main section.events p {text-align: center; padding: 1% 0 1% 2%; margin: 0 0 10px 0;}
+    /*----------- FOOTER --------------*/
+    form label.sliderContainer input.slider {display: block; font-size: 1rem; padding: .3rem; color: #555; max-width: 20rem; background-color: rgba(0,0,0,0.1);}
+    /*----------- FOOTER --------------*/
+    footer {display: grid; grid-template-columns: 1fr; align-content: center; max-width: 64rem;}
+    footer p {line-height: 1.2rem;}
+    footer h4 {margin: 2rem 0 0 0;}
+    footer img {width: 100%; height: 150px; float: left;}
+    #ftMapContact {display: grid; grid-template-columns: 50px 1fr 40px 1fr 50px;}
+    #ftContact {grid-column: 4; line-height: 1.5rem; text-align: left; padding: 0 2%; margin: 0 2rem;}
+    #ftMap {grid-column: 2; padding: 2rem 2%;}
+    #googleMap {border: 1px solid; width: 100%; height: 200px;}
+    #classData {grid-row: 2; line-height: 1.3rem;}
+    .social {width: 60px; height: auto; padding-right: 20px;}
+    } /* end of media query */
+
+    /*------------ Small CSS -----------*/
+    /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+/* Collor Pallet https://coolors.co/012a4a-013a63-01497c-014f86-2a6f97-2c7da0-468faf-61a5c2-89c2d9-a9d6e5 */
+:root {--primary-color: #289fca; --secondary-color: #292929; --accent1-color: #fdfdfd; --accent2-color: #A9D6E5; --accent3-color: #89C2D9; --accent4-color: #ffffff; --accent5-color: #01497C; --accent6-color: #ca8428;
+/* Font Styling */
+--heading-font: 'Libre Baskerville', serif; --paragraph-font: 'Open Sans', sans-serif;}
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.center {margin: 0 auto;}
+/*----------- BODY --------------*/
+body {font-size: 16px; font-family: var(--paragraph-font);}
+h1, h2, h3, h4, h5, h6, p, td, tr, div {font-family: var(--heading-font); color: var(--secondary-color);}
+a:hover {cursor: pointer;}
+img[data-src] {filter: blur(0.2em);}
+.linkColor {color: var(--secondary-color);}
+/*----------- HEADER --------------*/
+section#message {background-color: var(--accent6-color); padding: 1rem 2%;}
+section.showme {display: block;}
+section.hideme {display: none;}
+header {padding: .5rem 2%; background-color: var(--accent1-color);}
+header img {float: right; margin-right: 70px; width: 15%; height: 15%;}
+header h1 {margin: 0; font-size: 1.2rem; color: var(--secondary-color);}
+header h2 {margin: 0; font-weight: normal; font-size: .7rem; color: var(--secondary-color);}
+header div {margin: 0; font-weight: normal; font-size: 1rem;}
+/*----------- NAVIGATION --------------*/
+nav button {margin: .2rem 2%; background-color: var(--secondary-color); color: var(--accent3-color); border: none; font-size: 1.6rem;}
+nav {background-color: var(--primary-color);}
+nav ul {list-style-type: none; padding: 0; margin: 0;}
+nav ul li a {display: inline-block; color: var(--secondary-color); padding: .5rem; text-decoration: none; font-size: .9rem; text-align: center;}
+nav ul li a:hover {background-color: var(--accent2-color); color: var(--accent1-color);}
+nav ul li.active a {background-color: var(--accent1-color); color: var(--secondary-color);}
+nav ul.hide {display: none;}
+/*----------- MAIN --------------*/
+main {padding: 0 2%; min-height: 10rem;}
+main img {width: 100%; height: auto; border-radius: 4px;}
+hr {border: .07rem solid var(--accent1-color);}
+main div figcaption {font-size: .8em; padding: 1px 0 20px 0;}
+main div.wHeading {text-align: center;}
+.imgGallery:hover {box-shadow: 0 0 50px var(--secondary-color);}
+.fiveDayForcast {display: none;}
+main.thankYou {padding: 2rem;}
+main div.thankYou {border: 2px solid var(--accent1-color); border-radius: 4px; padding: .2rem 2%; margin: 0 auto; width: 100%; max-width: 40rem; line-height: 1.5rem;}
+.placeHolder {border: 2px solid var(--secondary-color); text-align: center; padding: 10px; background-color: rgba(169, 214, 229, 0.7);}
+.placeHolder td{text-align: right; padding: 2px 10px 2px 10px;}
+.placeHolder td:nth-child(2){text-align: center; padding: .4rem .2rem;}
+.smCenter {margin-left: auto; margin-right: auto;}
+main table.smCenter {padding: 10px 0 20px 0;}
+main table.smCenter td {font-size: .8em;}
+.contentbox {display: block; margin: 10px auto; border: 1px dashed var(--secondary-color); padding: 15px; background-color: rgba(255, 153, 153, 0.3);}
+.wireFrameCenter {text-align: center; padding: 2%}
+main article {padding: 20px 0 30px 0; border-radius: 4px;}
+main article img {border-radius: 4px; box-shadow: 0 5px 8px;}
+main img#icon {width: 3rem;}
+/*----------- Home Page Cards --------------*/
+main div.businesses {padding: 0 2%; margin: auto;}
+main div.businesses section {font-family: var(--heading-font); text-align: center; background-color: var(--accent1-color); border-radius: 4px; margin: .5rem; padding: 0 0 20px 0; box-shadow: 0 5px 8px;}
+main div.businesses section:hover {box-shadow: 0 0 10px var(--secondary-color);}
+main div.businesses h2 {font-size: 2.5rem; margin: auto; color: var(--secondary-color); background-color: var(--accent1-color); padding: 10px 0 5px 0; border-radius: 4px 4px 0 0;}
+main div.businesses h3 {margin: auto; color: var(--secondary-color); background-color: var(--accent1-color); font-size: 1.3rem; padding: 0 0 15px 0;}
+main div.businesses p {margin: auto; line-height: 16px;}
+main div.businesses a {text-decoration: none;}
+main div.businesses img.imgCard {width: 90%; border-radius: 10px; box-shadow: 0 5px 8px var(--accent1-color);}
+/*----------- fDay --------------*/
+main section.fDay {display: block; justify-content: center; background-color: rgba(169, 214, 229, 0.6); margin: 5% auto;}
+main div#fCard {padding: .1rem; margin: 5% auto; max-width: 60%; border-radius: 4px; background-color: rgba(169, 214, 229, 0.6); box-shadow: 0 5px 8px;}
+main div#fCard section.fDay div{margin-left: auto; margin-right: auto;}
+#fDayHeader {text-align: center; padding: 30px 0 0 0; margin: 0;}
+#fCard h4 {display: block; padding: 1rem; text-align: center; margin: 0; background-color: var(--secondary-color);}
+main section.fDay img.imgFDay {display: block; margin-left: auto; margin-right: auto; width: 50px; height: auto;}
+main section.fDay p {display: block; text-align: center; margin: auto; color: var(--accent1-color); padding-bottom: 10px;}
+main div.fiveDayForcastNew section {display: block; border: 1px solid var(--accent1-color);}
+/*----------- FORM --------------*/
+main h1.formH1 {padding: .2rem 2%;}
+form fieldset {margin: 2rem 0; border: 1px solid var(--accent1-color); border-radius: 10px; padding: .5rem 2%; box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 100%; padding-bottom: 2rem;}
+form legend {color: var(--secondary-color); margin: 0 1rem; padding: 0 .5rem;}
+form label.top, form div, form label.slider {display: block; padding-top: 1rem; color: var(--secondary-color); font-size: .8rem;}
+/* form label.top input, form select, form label.top textarea, form label select option {-webkit-appearance: none; display: block; font-size: 1rem; border: solid 1px #999; border-radius: 4px; padding: .75rem; color: #555; width: 100%; max-width: 20rem; background-color: rgba(0,0,0,0.1);} */
+form label.sbs {display: block; padding: .75rem; color: #555;}
+/* form label.sliderContainer {-webkit-appearance: none; display: block; padding-top: 1rem; color: var(--accent1-color); font-size: .8rem;} */
+form label.sliderContainer input.slider {display: block; font-size: 1rem; padding: .3rem; color: #555; width: 100%; max-width: 20rem; background-color: rgba(0,0,0,0.1);}
+form input.submitBtn {border: none; font-size: 1.2rem; font-weight: bold; background-color: var(--primary-color); color: var(--secondary-color); border-radius: 1rem; padding: .75rem 1.5rem; margin: 0 0 2rem 2%; width: 96%; max-width: 20rem;}
+form label.top input:required {border-left: red solid 6px;}
+form label.top input:required:valid {border-left: green solid 6px;}
+/* div#selected {-webkit-appearance: none; display: none; font-size: 1rem; border: solid 1px var(--accent1-color); border-radius: 4px; padding: .75rem; color: var(--accent1-color); width: 100%; max-width: 20rem; background-color: rgba(255, 204, 153,0.4); margin: .5rem 0;} */
+/*----------- Events --------------*/
+main section.events {border: 1px solid var(--accent1-color); margin: 20px auto; max-width: 98%; background-color: var(--accent2-color); border-radius: 4px; box-shadow: 0 5px 8px var(--accent1-color);}
+main section.events h2 {text-align: center; background-color: var(--primary-color); padding: 25px; margin: 0;}
+main section.events p {text-align: center; font-size: inherit; padding: 1% 0 1% 2%; margin: 0 0 10px 0;}
+/*----------- FOOTER --------------*/
+footer {background-color: var(--primary-color); padding: 1rem 2%; text-align: center;}
+footer img {width: 100%; height: 150px;}
+footer h4 {color: var(--secondary-color);}
+footer p {margin: 0 0 15px 0; color: var(--secondary-color);}
+#placeIcons {font-size: 5px; color: var(--accent2-color);}
+.social {width: 40px; height: auto;}
+#classData {margin: 2rem 2%;}
+.material-icons.s15 {font-size: 15px;}
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {content: ""; display: table; clear: both;}
