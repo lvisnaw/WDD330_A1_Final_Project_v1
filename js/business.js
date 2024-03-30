@@ -1,7 +1,9 @@
 //JSON URL
 const requestURL = 'https://lvisnaw.github.io/business.json#'; 
 
-// PATH: ???
+// PATH: https://lvisnaw.github.io/WDD330_A1_Final_Project_v1/business.json# 
+
+// Working Path: https://lvisnaw.github.io/business.json#
 
 //Fetching Data from JSON URL
 fetch(requestURL)
@@ -55,9 +57,9 @@ fetch(requestURL)
         //Building section
         connect.append(heading);
         heading.append(title);
-        heading.append(url);
+        //heading.append(url);
         connect.append(info);
-        info.append(events);
+        //info.append(events);
         connect.append(image);
         card.append(connect);
         cards.append(card);
