@@ -1,7 +1,7 @@
 //JSON URL
 const requestURL = 'https://lvisnaw.github.io/business.json#'; 
 
-// PATH: 
+// PATH: jsonFile/business.json
 
 //Fetching Data from JSON URL
 fetch(requestURL)
