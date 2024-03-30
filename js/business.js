@@ -1,5 +1,7 @@
 //JSON URL
-const requestURL = 'https://lvisnaw.github.io/business.json#';
+const requestURL = 'https://lvisnaw.github.io/business.json#'; 
+
+// PATH: jsonFile/business.json
 
 //Fetching Data from JSON URL
 fetch(requestURL)
@@ -22,10 +24,8 @@ fetch(requestURL)
         let card = document.createElement('section');
         let heading = document.createElement('div');
         let title = document.createElement('h2');
-        //let motto = document.createElement('h3');
         let image = document.createElement('img');
         let events = document.createElement('p');
-        //let population = document.createElement('p');
         let url = document.createElement('p');
         let info = document.createElement('div');
         let connect = document.createElement('a');
@@ -48,7 +48,7 @@ fetch(requestURL)
         connect.setAttribute('target', '_blank');
         
         image.setAttribute('src', `images/${business.photo}`);
-        image.setAttribute('alt', `${business.name}, Town`);
+        image.setAttribute('alt', `${business.name}`);
         image.setAttribute('loading', 'lazy');
         image.setAttribute('class', 'imgCard');
         
@@ -58,34 +58,8 @@ fetch(requestURL)
         heading.append(url);
         connect.append(info);
         info.append(events);
-        //info.append(population);
-        //info.append(rain);
         connect.append(image);
         card.append(connect);
         cards.append(card);
     });
 })
-
-    /* Preston Events 
-
-    const prestonEventURL = "https://lvisnaw.github.io/business.json#";
-
-    fetch(prestonEventURL)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (prestonObject) {
-            const towns = prestonObject['towns'];
-            for (let i = 0; i < towns.length; i++) {
-                if (towns[i].name == 'Preston') {
-                    let preston = document.createElement('div');
-                    for (let x = 0; x < towns[i].events.length; x++) {
-                        let info = document.createElement('p');
-                        info.textContent = towns[i].events[x];
-                        preston.appendChild(info);
-                        document.getElementById('preston').appendChild(preston);
-                    }
-                }
-            }
-
-        }) */
