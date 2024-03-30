@@ -1,7 +1,7 @@
 //JSON URL
 const requestURL = 'https://lvisnaw.github.io/business.json#'; 
 
-// PATH: jsonFile/business.json
+// PATH: ???
 
 //Fetching Data from JSON URL
 fetch(requestURL)
@@ -15,9 +15,9 @@ fetch(requestURL)
         //Filter for specific towns
         const businessfilter = business.filter(
             (business) =>
-            business.name == 'Allens Camera' ||
-            business.name == 'Moxtek' ||
-            business.name == 'Sun River Gardens'
+            business.name == 'Holiday Designs' ||
+            business.name == 'SLV Design' ||
+            business.name == 'Humanitarian'
         );
     //Pulling content from json file
     businessfilter.forEach((business) => {
