@@ -33,7 +33,7 @@ nav ul.hide {display: none;}
 /* Right justify the last li element */
 #primaryNav li:last-child {float: right;}
 /* Change the image size */
-#primaryNav li:last-child img {width: 40px; height: auto;}
+#primaryNav li:last-child img {width: 30px; height: auto;}
 
 /*----------- MAIN --------------*/
 main {padding: 0 2%; min-height: 10rem;}
@@ -65,6 +65,61 @@ main div.businesses h3 {margin: auto; color: var(--secondary-color); background-
 main div.businesses p {margin: auto; line-height: 16px;}
 main div.businesses a {text-decoration: none;}
 main div.businesses img.imgCard {width: 90%; border-radius: 10px; box-shadow: 0 5px 8px var(--accent1-color);}
+/*----------- Prod --------------*/
+/* .prod-card-grid {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+.row-grid {
+    max-width: 1020px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .row-grid img {
+    width: 100%;
+    height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    background-position: center;
+  }
+  
+  div.card {
+    flex-grow: 1;
+  } */
+
+/*----------- Prod --------------*/
+.prod-card-grid {
+    max-width: 100%;
+    margin: 0 auto;
+}
+.row-grid {
+    max-width: 1020px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Align items at the start of the cross axis */
+}
+
+.row-grid img {
+    width: 100%;
+    height: auto; /* Allow the image to adjust its height based on its width */
+    max-height: 50vh; /* Set a maximum height for the image */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    object-position: center; /* Center the image */
+    background-position: center;
+}
+
+div.card {
+    flex-grow: 1;
+    width: 100%; /* Ensure the card takes up the full width of its container */
+    padding: 10px; /* Add padding for better spacing */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+
 /*----------- fDay --------------*/
 main section.fDay {display: block; justify-content: center; background-color: rgba(169, 214, 229, 0.6); margin: 5% auto;}
 main div#fCard {padding: .1rem; margin: 5% auto; max-width: 60%; border-radius: 4px; background-color: rgba(169, 214, 229, 0.6); box-shadow: 0 5px 8px;}
