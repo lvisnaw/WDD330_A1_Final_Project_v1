@@ -45,7 +45,7 @@ fetch(requestURL)
         let local = location.replace('jpg', 'html');
         
         connect.setAttribute('href', `${business.url}`);
-        connect.setAttribute('target', '_blank');
+        // connect.setAttribute('target', '_blank');
         
         image.setAttribute('src', `images/${business.photo}`);
         image.setAttribute('alt', `${business.name}`);
