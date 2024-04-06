@@ -1,9 +1,7 @@
 //JSON URL
 const requestURL = 'https://lvisnaw.github.io/business.json#'; 
 
-// PATH: https://lvisnaw.github.io/WDD330_A1_Final_Project_v1/business.json# 
-
-// Working Path: https://lvisnaw.github.io/business.json#
+// PATH: https://lvisnaw.github.io/WDD330_A1_Final_Project_v1/business.json# this is not working and I don't understand github enough to fix it.
 
 //Fetching Data from JSON URL
 fetch(requestURL)
