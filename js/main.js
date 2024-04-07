@@ -13,7 +13,7 @@ const images = [
 ];
 const titles = [
   "Pumpkin Set",
-  "Necklas",
+  "Necklace",
   "Kids Hat for donation only"
 ];
 const paragraphs = [
@@ -44,10 +44,11 @@ function createCards(list, selector) {
 function createCard(card) {
   const cardElement = document.createElement("div");
   cardElement.style.width = card.width + "px";
-  cardElement.style.height = card.height + "%";
-  cardElement.classList.add("card");
+//   cardElement.style.height = card.height + "%";
+  cardElement.classList.add("card", "prodCard");
   const img = new Image();
   img.src = card.src;
+  img.classList.add("imgFade");
   cardElement.appendChild(img);
   const title = document.createElement("h2");
   title.innerText = card.title;
@@ -55,6 +56,10 @@ function createCard(card) {
   const paragraph = document.createElement("p");
   paragraph.innerText = card.paragraph;
   cardElement.appendChild(paragraph);
+  const button = document.createElement("button");
+  button.innerText = "Add To Cart";
+  button.classList.add("cart-bttn"); // Add class "cart-bttn"
+  cardElement.appendChild(button);
   return cardElement;
 }
 
