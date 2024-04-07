@@ -77,9 +77,6 @@ div.card img {border-radius: 8px; box-shadow: 0px 2px 4px #999999;}
 .imgBox {overflow: hidden;}
 .imgFade {transition: transform .3s ease-in-out;} 
 .imgFade:hover {transform: scale(1.04);}
-   
-
-
 /*----------- fDay --------------*/
 main section.fDay {display: block; justify-content: center; background-color: rgba(169, 214, 229, 0.6); margin: 5% auto;}
 main div#fCard {padding: .1rem; margin: 5% auto; max-width: 60%; border-radius: 4px; background-color: rgba(169, 214, 229, 0.6); box-shadow: 0 5px 8px;}
