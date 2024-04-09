@@ -6,6 +6,7 @@ header, nav, main, footer {margin: auto;}
 /*----------- NAVIGATION --------------*/
 nav button {display: none;}    
 nav ul.hide {display: block;}
+.nav-size {height: 3rem;}
 /*----------- MAIN --------------*/
 .contentbox {display: block; margin: 10px auto; border: 1px dashed var(--secondary-color); padding: 15px; background-color: rgba(169, 214, 229, 1);}
 main {padding: .2rem 2%; max-width: 64rem;}
