@@ -118,8 +118,8 @@ export function updateCartCount(change) {
 
 // Function to load header and footer templates
 export async function loadHeaderFooter() {
-  const headerTemplateFn = loadTemplate("/partials/headder.html");
-  const footerTemplateFn = loadTemplate("/partials/footer.html");
+  const headerTemplateFn = loadTemplate("../partials/header.html");
+  const footerTemplateFn = loadTemplate("../partials/footer.html");
   const headerEl = document.querySelector("#main-header");
   const footerEl = document.querySelector("#main-footer");
   await renderWithTemplate(headerTemplateFn, headerEl);
