@@ -17,7 +17,7 @@ img[data-src] {filter: blur(0.2em);}
 section#message {background-color: var(--accent6-color); padding: 1rem 2%;}
 section.showme {display: block;}
 section.hideme {display: none;}
-header {padding: .5rem 2%; background-color: var(--accent1-color);}
+header {padding: .5rem 0; background-color: var(--accent1-color);}
 header img {float: right; margin-right: 70px; width: 15%; height: 15%;}
 header h1 {margin: 0; font-size: 1.2rem; color: var(--secondary-color);}
 header h2 {margin: 0; font-weight: normal; font-size: .7rem; color: var(--secondary-color);}
