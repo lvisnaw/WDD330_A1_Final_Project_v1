@@ -4,6 +4,30 @@ import { loadHeaderFooter } from "./utils.mjs";
 
 loadHeaderFooter();
 
+// Function to add "active" class to the appropriate navigation item
+function setActiveNavItem() {
+    // Get the current page URL
+    var currentPageUrl = window.location.href;
+    
+    // Select the navigation items
+    var navItems = document.querySelectorAll('#primaryNav li');
+
+    // Loop through each navigation item
+    navItems.forEach(function(item) {
+        // Get the link from the navigation item
+        var link = item.querySelector('a').href;
+        
+        // Check if the current page URL contains the link (partial match)
+        if (currentPageUrl.includes(link)) {
+            // Add the "active" class to the matching navigation item
+            item.classList.add('active');
+        }
+    });
+}
+
+// Call the function to set the active navigation item when the page loads
+window.onload = setActiveNavItem;
+
 // Product Cards
 const base = 200; // Fixed base size for all cards
 const images = [
